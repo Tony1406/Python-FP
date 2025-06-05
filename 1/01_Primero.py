@@ -132,3 +132,26 @@ class Persona:
 
 anthony = Persona("Anthony", 22)
 anthony.saludar()
+
+# 🟩 Casting entre tipos primitivos
+
+a = int("123")          # str → int
+b = int(3.7)            # float → int (trunca a 3)
+c = float("3.14")       # str → float
+d = float(5)            # int → float
+e = str(456)            # int → str
+f = str(True)           # bool → str
+g = bool(0)             # int → bool (False)
+h = bool(1)             # int → bool (True)
+i = bool("")            # str vacío → False
+j = bool("hola")        # str no vacío → True
+
+# 🟦 Casting entre colecciones
+
+lista_desde_str = list("hola")             # ['h', 'o', 'l', 'a']
+lista_desde_tupla = list((1, 2, 3))        # [1, 2, 3]
+lista_desde_set = list({1, 2, 3})          # [1, 2, 3] (desordenado)
+
+tupla_desde_lista = tuple([1, 2, 3])       # (1, 2, 3)
+set_desde_lista = set([1, 2, 2, 3])        # {1, 2, 3}
+dict_desde_lista = dict([["a", 1], ["b", 2]])  # {'a': 1, 'b': 2}
