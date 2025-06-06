@@ -27,9 +27,9 @@ def divisiónEntera(op1, op2):
 def resto(op1, op2):
     return op1 % op2
 
-print(sumar(numero1, numero2))
-print(resta(numero1, numero2))
-print(producto(numero1, numero2))
-print(división(numero1, numero2))
-print(divisiónEntera(numero1, numero2))
-print(resto(numero1, numero2))
+print(f" La suma es : {sumar(numero1, numero2)}")
+print(f" La resta es : {resta(numero1, numero2)}")
+print(f" El producto es : {producto(numero1, numero2)}")
+print(f" La division es : {división(numero1, numero2)}")
+print(f" La división entera es : {divisiónEntera(numero1, numero2)}")
+print(f" El resto es : {resto(numero1, numero2)}")
